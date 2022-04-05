@@ -1,49 +1,49 @@
-// let car = {
-//     color: "black",
-// }
-// alert(car.color)
+let car = {
+    color: "black",
+}
+alert(car.color)
 
-// car.color = "green";
-// alert(car.color)
+car.color = "green";
+alert(car.color)
 
-// car.power = "180 HP"
-// function power() {
-//     console.info("Car power:", car.power)
-// }
-// power();
-
-
-// function sumOfFruits(apple, pear) {
-//    return apple + pear;
-// }
-// let sum = sumOfFruits(35, 44);
-// console.log ("The sum of fruits: ", sum);
+car.power = "180 HP"
+function power() {
+    console.info("Car power:", car.power)
+}
+power();
 
 
-// function greetings() {
-//     if (inputName.trim() == savedName) {
-//         alert("Greetings, " + inputName.trim() + "!")
-//     } else {
-//         alert("No such name.")
-//     }
-// }
-
-// let savedName = "tester";
-// let inputName = prompt("What is your name?");
-// greetings(inputName);
+function sumOfFruits(apple, pear) {
+   return apple + pear;
+}
+let sum = sumOfFruits(35, 44);
+console.log ("The sum of fruits: ", sum);
 
 
-// function typeOfArgument(inputArgument) {
-//     console.log ("Argument type: ", typeof inputArgument);
-// }
-// typeOfArgument();
-// typeOfArgument(NaN);
-// typeOfArgument(2.3);
-// typeOfArgument(Symbol());
-// typeOfArgument(true);
-// typeOfArgument("");
-// typeOfArgument(alert);
-// typeOfArgument(null);
+function greetings() {
+    if (inputName.trim() == savedName) {
+        alert("Greetings, " + inputName.trim() + "!")
+    } else {
+        alert("No such name.")
+    }
+}
+
+let savedName = "tester";
+let inputName = prompt("What is your name?");
+greetings(inputName);
+
+
+function typeOfArgument(inputArgument) {
+    console.log ("Argument type: ", typeof inputArgument);
+}
+typeOfArgument();
+typeOfArgument(NaN);
+typeOfArgument(2.3);
+typeOfArgument(Symbol());
+typeOfArgument(true);
+typeOfArgument("");
+typeOfArgument(alert);
+typeOfArgument(null);
 
 
 function isPrimeNumber(inputNumber) {
@@ -54,12 +54,12 @@ function isPrimeNumber(inputNumber) {
             break; 
         }
     }
-    if (flag && inputNumber > 1 /* && Number.isInteger(inputNumber)*/) {
+    if (flag && inputNumber > 1 && Number.isInteger(inputNumber)) {
         alert("The number is prime.")
     } else {
         alert("The number is not a prime.")
     }
 }
 
-let inputNumber = prompt("Enter the natural number, please.");
+let inputNumber = Number(prompt("Enter the number, please."));
 isPrimeNumber(inputNumber);
