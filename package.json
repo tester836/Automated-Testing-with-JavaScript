@@ -1,0 +1,10 @@
+{
+  "name": "Automated-Testing-with-JavaScript",
+  "version": "1.0.0",
+  "Dependencies": {
+    "fs-extra": "^10.0.1"
+  },
+  "devDependencies": {
+    "fs-extra": "^10.0.1"
+  }
+}
