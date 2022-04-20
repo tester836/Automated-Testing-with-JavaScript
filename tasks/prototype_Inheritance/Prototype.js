@@ -11,6 +11,7 @@ function Cat (name) {
 }
 
 Cat.prototype = animal
+
 catBars = new Cat("Bars")
 console.log(catBars.move)
     

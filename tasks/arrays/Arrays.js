@@ -1,3 +1,5 @@
+const nextTaskText = "\n-------next task-------";
+
 let movies = [
     'movie1',
     'movie2',
@@ -6,43 +8,43 @@ let movies = [
 $.each(movies, function (index, value){
     console.log(index + ': ' + value);
 });
-
+console.info(nextTaskText);
 
 let carsArray = ['vaz', 'bmw', 'kamaz'];
 let carsToString = carsArray.join('+');
 console.log(carsToString);
 let carsToArray = carsToString.split('+');
 console.log(carsToArray);
-
+console.info(nextTaskText);
 
 let friends = ['John', 'Ivan', 'Bill'];
 let helloFriends = friends.map((name) => 'hello ' + name);
 console.log(helloFriends);
-
+console.info(nextTaskText);
 
 const array = [1,6,7,8,3,4,5,6];
 console.log(Boolean(array));
-
+console.info(nextTaskText);
 
 let descSortedArray = array.sort((a, b) => b - a);
 console.log(descSortedArray); 
-
+console.info(nextTaskText);
 
 let filteredArray = array.filter(num => num > 3);
 console.log(filteredArray);
-
+console.info(nextTaskText);
 
 function indexOfNumber(arr, num) {
     return arr.indexOf(num);
 }
 console.log(indexOfNumber([1,6,7,8,3,4,5,6], 3));
-
+console.info(nextTaskText);
 
 let a = 15;
 while (a >= 10) {
     console.log (a--);
 }
-
+console.info(nextTaskText);
 
 function isPrimeNumber() {
     let flag = true;
@@ -55,14 +57,15 @@ function isPrimeNumber() {
     if (flag && number > 1 && Number.isInteger(number)) {
         return number
     }
-    else {
-        return "";
+}
+for (number = 0; number < 111; number++) {
+    if (isPrimeNumber(number)) {
+        console.log (number)
     }
 }
-for (number = 0; number < 111; console.log (isPrimeNumber(number++)));
+console.info(nextTaskText);
 
-
-for (num = 0; num < 20; num++) {
+for (let num = 0; num < 20; num++) {
     if (num% 2) {
         console.log (num++);
     }
