@@ -38,40 +38,32 @@ function indexOfNumber(arr, num) {
 console.log(indexOfNumber([1,6,7,8,3,4,5,6], 3));
 
 
-let a = 20;
-while (a >= 10) { 
-    console.log(a);
-    a--;
+let a = 15;
+while (a >= 10) {
+    console.log (a--);
 }
 
 
 function isPrimeNumber() {
     let flag = true;
-    for (let i = 2; i < inputNumber; i++) {
-        if (inputNumber % i == 0) {
+    for (let i = 2; i < number; i++) {
+        if (number % i == 0) {
             flag = false;
             break; 
         }
     }
-    if (flag && inputNumber > 1 && Number.isInteger(inputNumber)) {
-        return inputNumber
+    if (flag && number > 1 && Number.isInteger(number)) {
+        return number
     }
     else {
         return "";
     }
 }
-
-let inputNumber = 0;
-while (inputNumber <= 100) {
-    console.log(isPrimeNumber(inputNumber));
-    inputNumber++
-}
+for (number = 0; number < 111; console.log (isPrimeNumber(number++)));
 
 
-let num = 0;
-while (num < 100) {
-    num++
-    if (num%2) {
-        console.log(num);
+for (num = 0; num < 20; num++) {
+    if (num% 2) {
+        console.log (num++);
     }
 }
