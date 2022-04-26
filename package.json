@@ -1,7 +1,14 @@
 {
     "name": "automated-testing-with-javascript",
     "version": "1.0.0",
+    "author": "tester836",
+    "license": "ISC",
 
+    "scripts": {
+        "test": "mocha",
+        "coverage": "nyc npm run test",
+        "wdio": "wdio run wdio.conf.js"
+    },
     "dependencies": {
         "cypress": "^9.5.4",
         "fs-extra": "^10.0.1",
@@ -15,17 +22,36 @@
         "@wdio/spec-reporter": "^7.19.5",
         "chai": "^4.3.6",
         "chromedriver": "^100.0.0",
+        "eslint": "^8.14.0",
         "fs-extra": "^10.0.1",
+        "husky": "^7.0.4",
         "mocha": "^9.2.2",
+        "mochawesome": "^7.1.3",
+        "nyc": "^15.1.0",
         "selenium-webdriver": "^4.1.1",
         "wdio-chromedriver-service": "^7.3.2",
         "wdio-edgedriver-service": "^1.2.0",
         "wdio-geckodriver-service": "^2.1.1",
         "wdio-wait-for": "^2.2.5"
     },
-    "scripts": {
-        "test": "mocha",
-        "wdio": "wdio run wdio.conf.js"
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tester836/Automated-Testing-with-JavaScript.git"
+    },
+    "bugs": {
+        "url": "https://github.com/tester836/Automated-Testing-with-JavaScript/issues"
+    },
+    "homepage": "https://github.com/tester836/Automated-Testing-with-JavaScript#readme",
+    "nyc": {
+        "reporter": "html",
+        "check-coverage": true,
+        "branches": 15,
+        "lines": 40,
+        "functions": 50
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "npm run coverage"
+        }
     }
-      
 }

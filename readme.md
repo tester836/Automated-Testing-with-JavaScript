@@ -1,3 +1,14 @@
+install 
+>npm i 
+
+run tests with Mocha
+>npm test
+
+run tests with WebdriverIO
+>npm run wdio
+
+
+
 # tasks
 
 ## Conditional Statements and Data Types
