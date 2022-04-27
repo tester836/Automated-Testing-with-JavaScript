@@ -3,3 +3,4 @@ node_modules
 .vscode
 mochawesome-report
 .nyc_output
+coverage

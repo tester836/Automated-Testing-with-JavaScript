@@ -3,7 +3,6 @@
     "version": "1.0.0",
     "author": "tester836",
     "license": "ISC",
-
     "scripts": {
         "test": "mocha",
         "coverage": "nyc npm run test",

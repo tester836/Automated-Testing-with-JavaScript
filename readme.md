@@ -7,6 +7,9 @@ run tests with Mocha
 run tests with WebdriverIO
 >npm run wdio
 
+coverage report
+>npm run coverage
+
 
 
 # tasks
